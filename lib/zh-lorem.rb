@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+#
+# Author:: Kang-min Liu (http://gugod.org)
+# Copyright:: Copyright (c) 2012 Kang-min Liu
+# License:: MIT
+# Contributors:: https://github.com/gugod/zh-lorem/contributors
+#
+
 class ZhLorem
   module Helpers
     def zh_lorem_name(replacement = nil)

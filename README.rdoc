@@ -3,6 +3,32 @@
 This rubygem is a re-imelpmentation of MoreText lipsum service provided by
 Handlino Inc. See more at http://more.handlino.com/.
 
+To use it, you `include ZhLorem::Helpers` in your code to include the following methods:
+
+* zh_lorem_name
+* zh_lorem_name_pinyin
+* zh_lorem_first_name
+* zh_lorem_first_name_pinyin
+* zh_lorem_last_name
+* zh_lorem_last_name_pinyin
+* zh_lorem_email
+* zh_lorem_word
+* zh_lorem_words(n)
+* zh_lorem_sentence
+* zh_lorem_sentences(n)
+* zh_lorem_paragraph
+* zh_lorem_paragraphs(n)
+
+Methods named in plural form requires one numerical argument, others requires no
+arguments.
+
+Alternatively, you may invoke methods on `ZhLorem` class, or its instance. The following
+statements are taking the same action:
+
+    puts zh_lorem_sentence
+    puts ZhLorem.sentence
+    puts ZhLorem.new.sentence
+
 == Contributing to zh-lorem
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
