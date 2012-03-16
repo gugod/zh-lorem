@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/zh-lorem.rb",
     "spec/spec_helper.rb",
-    "spec/zh-lorem_spec.rb"
+    "spec/zh-lorem_spec.rb",
+    "zh-lorem.gemspec"
   ]
   s.homepage = "http://github.com/gugod/zh-lorem"
   s.licenses = ["MIT"]
