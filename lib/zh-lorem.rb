@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-module ZhLorem
+class ZhLorem
   module Helpers
     def zh_lorem_name(replacement = nil)
       if replacement
@@ -120,5 +120,27 @@ module ZhLorem
     def random_one(arr)
       return arr.to_a[ rand(arr.to_a.size) ]
     end    
+  end
+
+  class << self
+    include Helpers
+
+    alias :name :zh_lorem_name
+    alias :name_pinyin :zh_lorem_name_pinyin
+    alias :first_name :zh_lorem_first_name
+    alias :first_name_pinyin :zh_lorem_first_name_pinyin
+    alias :last_name :zh_lorem_last_name
+    alias :last_name_pinyin :zh_lorem_last_name_pinyin
+    alias :email :zh_lorem_email
+    alias :word :zh_lorem_word
+    alias :words :zh_lorem_words
+    alias :sentence :zh_lorem_sentence
+    alias :sentences :zh_lorem_sentences
+    alias :paragraph :zh_lorem_paragraph
+    alias :paragraphs :zh_lorem_paragraphs
+  end
+
+  def method_missing(m, *args)
+    ZhLorem.send(m, *args)
   end
 end
