@@ -1,6 +1,7 @@
 = zh-lorem
 
-Description goes here.
+This rubygem is a re-imelpmentation of MoreText lipsum service provided by
+Handlino Inc. See more at http://more.handlino.com/.
 
 == Contributing to zh-lorem
  
