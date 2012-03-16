@@ -29,6 +29,17 @@ statements are taking the same action:
     puts ZhLorem.sentence
     puts ZhLorem.new.sentence
 
+
+All methods takes an optional replacement argument at the end of argument list.
+The replacement is a String, which is the return value when provided.
+
+That is:
+
+    puts zh_lorem_name("Wutang") #=> "Wutang"
+
+This can be helpful when you need some tweaking.
+
+
 == Contributing to zh-lorem
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.

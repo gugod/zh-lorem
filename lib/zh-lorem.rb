@@ -8,7 +8,6 @@
 
 class ZhLorem
   module Helpers
-
     # Returns a random Chinese name.
     def zh_lorem_name(replacement = nil)
       if replacement
