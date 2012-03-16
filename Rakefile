@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "zh-lorem"
   gem.homepage = "http://github.com/gugod/zh-lorem"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.summary = %Q{Chinese lorem ipsum text generator}
   gem.description = %Q{Chinese lorem ipsum text generator}
   gem.email = "gugod@gugod.org"
   gem.authors = ["Kang-min Liu"]
